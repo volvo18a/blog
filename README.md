@@ -1,2 +1,0 @@
-# blog
-Amao's blog
