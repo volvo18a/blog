@@ -1,6 +1,13 @@
 # my-blog
 
-> A Vue.js project
+> Amao's blog
+
+## Download
+
+``` bash
+# clone
+git clone git@github.com:volvo18a/blog.git
+```
 
 ## Build Setup
 
