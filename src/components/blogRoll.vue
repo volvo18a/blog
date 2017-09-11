@@ -3,14 +3,14 @@
     <header>{{ msg }}</header>
     <div class="right-content">
       <div class="swiper-container">
-        <ul class="friend-container" :style="{'transform': 'translate3d(' + -(index * 300) + 'px, 0, 0)'}">
-          <li class="friend-item" v-for="(friend, $index) in friends" :class="{'on': $index === index + 1}" @click="go($index - 1)">
-            <div class="friend-img" :style="{backgroundImage: 'url(' + friend.img_url + ')'}"></div>
+        <ul class="friend-container" :style="{ 'transform': 'translate3d(' + -(index * 300) + 'px, 0, 0)' }">
+          <li class="friend-item" v-for="(friend, $index) in friends" :class="{ 'on': $index === index + 1 }" @click="go($index - 1)">
+            <div class="friend-img" :style="{ backgroundImage: 'url(' + friend.img_url + ')' }"></div>
             <div class="friend-info">
               <div>{{ friend.name }}</div>
               <div>{{ friend.info }}</div>
               <div>
-                Link：<a class="friend-link" href="http://geeku.net/">{{ friend.link }}</a>
+                Link：<a class="friend-link" :href="friend.link">{{ friend.link }}</a>
               </div>
             </div>
           </li>
@@ -19,13 +19,12 @@
     </div>
   </div>
 </template>
-
 <script>
 import friend from '@/json/friend_link.json'
 
 export default {
   name: 'blogRoll',
-  data () {
+  data() {
     return {
       msg: 'Amao\'s Friendship Links',
       index: -1,
@@ -33,15 +32,15 @@ export default {
     }
   },
   methods: {
-    go (i) {
-        this.index = i
+    go(i) {
+      this.index = i
     }
   }
 }
-</script>
 
+</script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="scss">
 .swiper-container {
   width: 900px;
   height: 386px;
@@ -53,7 +52,7 @@ export default {
   height: 386px;
   list-style: none;
   font-size: 0;
-  transition: transform .3s cubic-bezier(.86,0,.07,1),-webkit-transform .3s cubic-bezier(.86,0,.07,1);
+  transition: transform .3s cubic-bezier(.86, 0, .07, 1), -webkit-transform .3s cubic-bezier(.86, 0, .07, 1);
   transform: translate3d(0, 0, 0);
 }
 
@@ -63,13 +62,13 @@ export default {
   width: 300px;
   height: 386px;
   transform: scale(0.5);
-  transition: transform .3s cubic-bezier(.86,0,.07,1);
+  transition: transform .3s cubic-bezier(.86, 0, .07, 1);
 }
 
 .on {
   box-shadow: 0px 1px 10px #F2F4F6;
   transform: scale(1);
-  transition: transform .3s cubic-bezier(.86,0,.07,1);
+  transition: transform .3s cubic-bezier(.86, 0, .07, 1);
 }
 
 .friend-img {
@@ -90,12 +89,11 @@ export default {
   color: #fff;
   background: linear-gradient(to bottom right, #c8e1ff, rgba(132, 225, 239, 0.6));
   /* #76f6d7, #45f4be #c8e1ff, #84e1ef*/
-  /* border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px; */
 }
 
 .friend-link {
   font-size: 14px;
   color: #fff;
 }
+
 </style>

@@ -25,7 +25,7 @@ export default {
       headPicUrl: '/static/Amao.png',
       show: true,
       items: [
-        { message: 'Home', path: '/hello' },
+        { message: 'Home', path: '/home' },
         { message: 'Personal', path: '/personal' },
         { message: 'Curriculum Vitae', path: '/' },
         { message: 'Friendship Link', path: '/friend' }
@@ -33,24 +33,24 @@ export default {
     }
   },
   props: ['isShowLeft'],
-  mounted () {
+  mounted() {
     this.show = this.isShowLeft
   },
   methods: {
-    showSideLeftChild: function (item) {
-        if (item.message == 'Curriculum Vitae'){
-        	this.show = false
-        }
+    showSideLeftChild: function(item) {
+      if (item.message == 'Curriculum Vitae') {
+        this.show = false
+      }
     },
-    sideLeftLeave: function () {
-    	this.$emit('showSideLeft', this.show)
+    sideLeftLeave: function() {
+      this.$emit('showSideLeft', this.show)
     }
   }
 }
 
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="scss">
 .side-left {
   position: relative;
   width: 400px;
@@ -60,11 +60,13 @@ export default {
   box-shadow: 2px 0px 10px #F2F4F6;
 }
 
-.side-left-enter-active, .side-left-leave-active {
-	transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+.side-left-enter-active,
+.side-left-leave-active {
+  transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
 }
 
-.side-left-enter, .side-left-leave-to {
+.side-left-enter,
+.side-left-leave-to {
   transform: translateX(-400px);
   opacity: 0;
 }
@@ -94,7 +96,7 @@ export default {
 }
 
 .left-list {
-	list-style: none;
+  list-style: none;
 }
 
 .left-list-item {

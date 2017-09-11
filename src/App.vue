@@ -6,7 +6,7 @@
   </div>
 </template>
 <script>
-import hello from '@/components/hello'
+import home from '@/components/home'
 import sideLeft from '@/components/sideLeft'
 import sideLeftChild from '@/components/sideLeftChild'
 import personal from '@/components/personal'
@@ -18,7 +18,7 @@ export default {
     sideLeft,
     sideLeftChild,
     personal,
-    hello,
+    home,
     blogRoll
   },
   data() {
@@ -36,7 +36,10 @@ export default {
 }
 
 </script>
-<style>
+<style lang="scss">
+@import './mdstyle/markdown.scss';
+@import './mdstyle/hls.scss';
+
 @font-face {
   font-family: 'iconfont';  /* project id 220709 */
   src: url('//at.alicdn.com/t/font_220709_zgfshco7lnn7mn29.eot');
@@ -59,6 +62,7 @@ export default {
 * {
   padding: 0;
   margin: 0;
+  -webkit-appearance:none;
 }
 
 html,
@@ -83,14 +87,13 @@ body {
 .side-right {
   flex: 1;
   height: 100%;
-}
-
-.side-right header {
-  height: 75px;
-  line-height: 75px;
-  font-size: 30px;
-  box-sizing: border-box;
-  box-shadow: 0px 1px 10px #F2F4F6;
+  header {
+    height: 75px;
+    line-height: 75px;
+    font-size: 30px;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 10px #F2F4F6;
+  }
 }
 
 .right-content {

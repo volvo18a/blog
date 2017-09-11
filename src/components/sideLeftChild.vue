@@ -2,11 +2,11 @@
   <transition name="side-left-child" @after-leave="sideLeftChildLeave">
     <div class="side-left-child" v-if="show">
       <header class="left-child-header">
-      <span class="iconfont back-btn" @click="showSideLeft()">&#xe61a;</span>
+        <span class="iconfont back-btn" @click="showSideLeft()">&#xe61a;</span>
       </header>
       <ul class="left-child-list">
         <li v-for="item in items" class="left-child-list-item">
-          <router-link :to="item.path">{{item.message}}</router-link>
+          <router-link :to="item.path">{{ item.message }}</router-link>
         </li>
       </ul>
     </div>
@@ -27,22 +27,22 @@ export default {
     }
   },
   props: ['isShowLeftChild'],
-  mounted () {
+  mounted() {
     this.show = this.isShowLeftChild
   },
   methods: {
-    showSideLeft: function () {
+    showSideLeft: function() {
       this.show = false
     },
-    sideLeftChildLeave: function () {
-    	this.$emit('showSideLeft', !this.show)
+    sideLeftChildLeave: function() {
+      this.$emit('showSideLeft', !this.show)
     }
   }
 }
 
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="scss">
 .side-left-child {
   position: relative;
   width: 400px;
@@ -52,11 +52,13 @@ export default {
   box-shadow: 2px 0px 10px #F2F4F6;
 }
 
-.side-left-child-enter-active, .side-left-child-leave-active {
-	transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+.side-left-child-enter-active,
+.side-left-child-leave-active {
+  transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
 }
 
-.side-left-child-enter, .side-left-child-leave-to {
+.side-left-child-enter,
+.side-left-child-leave-to {
   transform: translateX(-400px);
   opacity: 0;
 }
@@ -69,14 +71,16 @@ export default {
   padding: 0 30px;
 }
 
-.left-child-header .back-btn {
-	color: #fff;
-	font-size: 20px;
-  cursor: pointer;
+.left-child-header {
+  .back-btn {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+  }
 }
 
 .left-child-list {
-	list-style: none;
+  list-style: none;
 }
 
 .left-child-list-item {
@@ -85,16 +89,22 @@ export default {
   /* border-bottom: 1px solid #CCC; */
 }
 
-.left-child-list-item a {
-  display: inline-block;
-  width: 100%;
-  color: #000;
-  text-decoration: none;
+.left-child-list-item {
+  a {
+    display: inline-block;
+    width: 100%;
+    color: #000;
+    text-decoration: none;
+  }
 }
 
-.left-child-list-item a:hover {
-  background-color: #169ee5;
-  color: #fff;
+.left-child-list-item {
+  a{
+    &:hover {
+      background-color: #169ee5;
+      color: #fff;
+    }
+  }
 }
 
 </style>
