@@ -44,7 +44,9 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
 .side-left-child {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 400px;
   min-width: 400px;
   height: 100%;

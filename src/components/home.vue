@@ -4,6 +4,7 @@
     <div class="right-content">
       <div class="at-markdown">
         <homeMd></homeMd>
+        <cssFirstArticle></cssFirstArticle>
       </div>
     </div>
   </div>
@@ -11,11 +12,14 @@
 
 <script>
 import homeMd from '@/markdown/home.md'
+import cssFirstArticle from '@/markdown/cssFirstArticle.md'
+
 
 export default {
   name: 'home',
   components: {
-    homeMd
+    homeMd,
+    cssFirstArticle
   },
   data () {
     return {
@@ -27,6 +31,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
+.right-content {
+  padding: 0 15px;
+}
 .at-markdown {
   width: 100%;
   height: 100%;

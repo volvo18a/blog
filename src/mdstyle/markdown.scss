@@ -119,6 +119,7 @@
 }
 
 .at-markdown>section pre {
+  position: relative;
   margin: 16px 0;
   padding: 16px;
   background-color: #F7F7F7;
@@ -130,6 +131,30 @@
   border: none;
   border-radius: 0;
   background-color: transparent;
+}
+
+.language-html:before {
+  content: 'html';
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  color: #afafaf;
+}
+
+.language-css:before {
+  content: 'css';
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  color: #afafaf;
+}
+
+.language-js:before {
+  content: 'js';
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  color: #afafaf;
 }
 
 .at-markdown>section>blockquote {

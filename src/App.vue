@@ -79,13 +79,11 @@ body {
   color: #2c3e50;
   height: 100%;
   position: relative;
-  display: -webkit-flex;
-  /* Safari */
-  display: flex;
 }
 
 .side-right {
-  flex: 1;
+  margin-left: 400px;
+  min-width: 800px;
   height: 100%;
   header {
     height: 75px;
@@ -97,7 +95,7 @@ body {
 }
 
 .right-content {
-  height: calc(100% - 75px);
+  min-height: calc(100% - 75px);
   position: relative;
   box-sizing: border-box;
   padding: 30px;
