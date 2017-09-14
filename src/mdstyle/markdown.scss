@@ -178,6 +178,15 @@
   line-height: 1.8;
 }
 
+.at-markdown>section>ol {
+  margin: 16px 0;
+  padding-left: 24px;
+}
+
+.at-markdown>section>ol li {
+  line-height: 1.8;
+}
+
 .at-markdown>section>table {
   margin: 24px 0;
 }

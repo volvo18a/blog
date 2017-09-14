@@ -7,6 +7,8 @@
 ``` bash
 # clone
 git clone git@github.com:volvo18a/blog.git
+
+or download the zip
 ```
 
 ## Build Setup

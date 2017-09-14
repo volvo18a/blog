@@ -4,6 +4,7 @@
     <div class="right-content">
       <div class="at-markdown">
         <homeMd></homeMd>
+        <config></config>
         <cssFirstArticle></cssFirstArticle>
       </div>
     </div>
@@ -12,6 +13,7 @@
 
 <script>
 import homeMd from '@/markdown/home.md'
+import config from '@/markdown/config.md'
 import cssFirstArticle from '@/markdown/cssFirstArticle.md'
 
 
@@ -19,6 +21,7 @@ export default {
   name: 'home',
   components: {
     homeMd,
+    config,
     cssFirstArticle
   },
   data () {
