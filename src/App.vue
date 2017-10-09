@@ -1,25 +1,19 @@
 <template>
   <div id="app">
-    <sideLeft :isShowLeft="isShowLeft" v-on:showSideLeft="showSideLeft" v-if="isShowLeft"></sideLeft>
-    <sideLeftChild :isShowLeftChild="isShowLeftChild" v-on:showSideLeft="showSideLeft" v-if="isShowLeftChild"></sideLeftChild>
+    <SideLeft :isShowLeft="isShowLeft" v-on:showSideLeft="showSideLeft" v-if="isShowLeft"></SideLeft>
+    <SideLeftChild :isShowLeftChild="isShowLeftChild" v-on:showSideLeft="showSideLeft" v-if="isShowLeftChild"></SideLeftChild>
     <router-view></router-view>
   </div>
 </template>
 <script>
-import home from '@/components/home'
-import sideLeft from '@/components/sideLeft'
-import sideLeftChild from '@/components/sideLeftChild'
-import personal from '@/components/personal'
-import blogRoll from '@/components/blogRoll'
+import SideLeft from '@/components/SideLeft'
+import SideLeftChild from '@/components/SideLeftChild'
 
 export default {
   name: 'app',
   components: {
-    sideLeft,
-    sideLeftChild,
-    personal,
-    home,
-    blogRoll
+    SideLeft,
+    SideLeftChild
   },
   data() {
     return {
@@ -99,6 +93,9 @@ body {
   position: relative;
   box-sizing: border-box;
   padding: 30px;
+}
+
+.flex-box {
   display: -webkit-flex;
   /* Safari */
   display: flex;

@@ -8,12 +8,12 @@
 
 2. 安装vue-cli
 ``` bash
-npm install -g vue-cli
+$ npm install -g vue-cli
 ```
 
 3. 使用vue-cli初始化项目
 ``` bash
-vue init webpack fileName
+$ vue init webpack fileName
 ```
 ![img](../assets/1.png)
 
@@ -23,9 +23,9 @@ vue init webpack fileName
 
 1. 安装 __node-sass__ 及 __sass-loder__(安装需要python2.7环境 [https://www.python.org/downloads/](https://www.python.org/downloads/)  安装后还需设置环境变量，请度娘，重启)
 ``` bash
-npm install node-sass --save-dev
+$ npm install node-sass --save-dev
 
-npm install sass-loder --save-dev
+$ npm install sass-loder --save-dev
 ```
 
 2. 找到 __build__ 目录下 __webpack.base.conf.js__ 文件 修改配置，如图：
@@ -44,7 +44,7 @@ __module__ 的 __rules__ 中添加
 
 1. 安装 __vue-markdown-loader__
 ``` bash
-npm install vue-markdown-loader --save-dev
+$ npm install vue-markdown-loader --save-dev
 ```
 
 2. 找到 __build__ 目录下 __webpack.base.conf.js__ 文件中 __module__ 的 __rules__ 中添加配置，如图：

@@ -1,7 +1,7 @@
 <template>
   <div class="side-right">
     <header>{{ msg }}</header>
-    <div class="right-content">
+    <div class="right-content flex-box">
       <div class="swiper-container">
         <ul class="friend-container" :style="{ 'transform': 'translate3d(' + -(index * 300) + 'px, 0, 0)' }">
           <li class="friend-item" v-for="(friend, $index) in friends" :class="{ 'on': $index === index + 1 }" @click="go($index - 1)">
