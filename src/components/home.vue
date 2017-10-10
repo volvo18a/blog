@@ -25,18 +25,18 @@
 </template>
 
 <script>
-import HomeMd from '@/markdown/home.md'
+/*import HomeMd from '@/markdown/home.md'
 import Config from '@/markdown/config.md'
 import CssFirstArticle from '@/markdown/cssFirstArticle.md'
-import GulpPostcss from '@/markdown/gulpPostcss.md'
+import GulpPostcss from '@/markdown/gulpPostcss.md'*/
 
 export default {
   name: 'home',
-  components: {
-    HomeMd,
-    Config,
-    CssFirstArticle
-  },
+  // components: {
+  //   HomeMd,
+  //   Config,
+  //   CssFirstArticle
+  // },
   data () {
     return {
       msg: 'Welcome to Amao\'s blog',
@@ -44,7 +44,8 @@ export default {
         { title: 'Download', path: '/download', description: '启动本项目步骤介绍', datetime: '2017-9-10' },
         { title: 'vue-cli Environment construction', path: '/environmentconfig', description: '关于vue-cli构建项目的步骤介绍及webpack的sass配置问题', datetime: '2017-9-12' },
         { title: 'Css First Article', path: '/cssfirst', description: '关于css定位布局等技巧的初次整理', datetime: '2017-9-14' },
-        { title: 'Gulp Postcss', path: '/gulppostcss', description: '关于淘宝Flexible.js使用gulp的postcss编译css使用方式', datetime: '2017-9-20' }
+        { title: 'Gulp Postcss', path: '/gulppostcss', description: '关于淘宝Flexible.js使用gulp的postcss编译css使用方式', datetime: '2017-9-20' },
+        { title: 'Css Render Mechanism', path: '/cssrender', description: '浏览器渲染机制（Css的重绘与回流）', datetime: '2017-9-22' }
       ]
     }
   }

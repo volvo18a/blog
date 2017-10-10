@@ -3,10 +3,11 @@ import Router from 'vue-router'
 import Home from '@/components/Home'
 import Personal from '@/components/Personal'
 import BlogRoll from '@/components/BlogRoll'
-import Download from '@/components/Download'
-import EnvironmentConfig from '@/components/EnvironmentConfig'
-import CssFirst from '@/components/CssFirst'
-import GulpPostcss from '@/components/GulpPostcss'
+import Download from '@/components/articles/Download'
+import EnvironmentConfig from '@/components/articles/EnvironmentConfig'
+import CssFirst from '@/components/articles/CssFirst'
+import GulpPostcss from '@/components/articles/GulpPostcss'
+import CssRender from '@/components/articles/CssRender'
 
 Vue.use(Router)
 
@@ -46,6 +47,11 @@ export default new Router({
       path: '/gulppostcss',
       name: 'GulpPostcss',
       component: GulpPostcss
+    },
+    {
+      path: '/cssrender',
+      name: 'CssRender',
+      component: CssRender
     }
   ]
 })
