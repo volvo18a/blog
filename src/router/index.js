@@ -8,6 +8,7 @@ import EnvironmentConfig from '@/components/articles/EnvironmentConfig'
 import CssFirst from '@/components/articles/CssFirst'
 import GulpPostcss from '@/components/articles/GulpPostcss'
 import CssRender from '@/components/articles/CssRender'
+import CssBFC from '@/components/articles/CssBFC'
 
 Vue.use(Router)
 
@@ -52,6 +53,11 @@ export default new Router({
       path: '/cssrender',
       name: 'CssRender',
       component: CssRender
+    },
+    {
+      path: '/cssbfc',
+      name: 'CssBFC',
+      component: CssBFC
     }
   ]
 })
