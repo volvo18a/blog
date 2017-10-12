@@ -25,9 +25,9 @@ export default {
       headPicUrl: '/static/Amao.png',
       show: true,
       items: [
-        { message: 'Home', path: '/home' },
+        { message: 'Home', path: '/' },
         { message: 'Personal', path: '/personal' },
-        { message: 'Curriculum Vitae', path: '/' },
+        { message: 'Curriculum Vitae', path: '/components' },
         { message: 'Friendship Link', path: '/friend' }
       ]
     }

@@ -5,7 +5,7 @@ import Personal from '@/components/Personal'
 import BlogRoll from '@/components/BlogRoll'
 import Download from '@/components/articles/Download'
 import EnvironmentConfig from '@/components/articles/EnvironmentConfig'
-import CssFirst from '@/components/articles/CssFirst'
+import VerticalAlign from '@/components/articles/VerticalAlign'
 import GulpPostcss from '@/components/articles/GulpPostcss'
 import CssRender from '@/components/articles/CssRender'
 import CssBFC from '@/components/articles/CssBFC'
@@ -15,7 +15,7 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/home',
+      path: '/',
       name: 'home',
       component: Home
     },
@@ -40,9 +40,9 @@ export default new Router({
       component: Download
     },
     {
-      path: '/cssfirst',
-      name: 'CssFirst',
-      component: CssFirst
+      path: '/verticalalign',
+      name: 'VerticalAlign',
+      component: VerticalAlign
     },
     {
       path: '/gulppostcss',

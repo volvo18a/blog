@@ -28,7 +28,7 @@ export default {
       items: [
         { title: 'Download', path: '/download', description: '启动本项目步骤介绍', datetime: '2017-9-10' },
         { title: 'vue-cli Environment construction', path: '/environmentconfig', description: '关于vue-cli构建项目的步骤介绍及webpack的sass配置问题', datetime: '2017-9-12' },
-        { title: 'Css First Article', path: '/cssfirst', description: '关于css定位布局等技巧的初次整理', datetime: '2017-9-14' },
+        { title: 'Css Vertical Align', path: '/verticalalign', description: '关于css定位布局等技巧的初次整理', datetime: '2017-9-14' },
         { title: 'Gulp Postcss', path: '/gulppostcss', description: '关于淘宝Flexible.js使用gulp的postcss编译css使用方式', datetime: '2017-9-20' },
         { title: 'Css Render Mechanism', path: '/cssrender', description: '浏览器渲染机制（Css的重绘与回流）', datetime: '2017-9-22' },
         { title: 'Css BFC', path: '/cssbfc', description: '关于Css中的BFC理解', datetime: '2017-10-9' }

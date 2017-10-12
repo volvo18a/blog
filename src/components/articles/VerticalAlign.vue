@@ -3,23 +3,23 @@
     <header>{{ msg }}</header>
     <div class="right-content">
       <div class="at-markdown">
-        <CssFirstArticle></CssFirstArticle>
+        <VerticalAlign></VerticalAlign>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import CssFirstArticle from '@/markdown/cssFirstArticle.md'
+import VerticalAlign from '@/markdown/verticalAlign.md'
 
 export default {
   name: 'download',
   components: {
-    CssFirstArticle
+    VerticalAlign
   },
   data () {
     return {
-      msg: 'Css First Article'
+      msg: 'Css Vertical Align'
     }
   }
 }
