@@ -54,3 +54,13 @@ $ npm install vue-markdown-loader --save-dev
 即可在 __.vue__ 文件中使用 引入 __.md__ 文件作为组件
 
 ![img](../assets/6.png)
+
+> npm run build后本地无法访问以及图片丢失问题
+
+1. 找到 __config__ 目录下 __index.js__ 文件修改配置，如图：
+
+![img](../assets/14.png)
+
+![img](../assets/15.png)
+
+2. 对于 __js__ 里写路径的图片丢失可以把图片都放在 __static__ 目录下，然后根据根路径对写在 __js__ 中的 __src__ 变量做出修改。

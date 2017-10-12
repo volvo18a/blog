@@ -22,7 +22,7 @@ export default {
   data() {
     return {
       userName: 'Amao',
-      headPicUrl: '/static/Amao.png',
+      headPicUrl: './static/Amao.png',
       show: true,
       items: [
         { message: 'Home', path: '/' },

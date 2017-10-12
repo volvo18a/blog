@@ -40,13 +40,13 @@
       "name": "阿夜",
       "info": "女装大佬",
       "link": "https://nightcat.win",
-      "img_url": "../../static/aye.jpg"
+      "img_url": "./static/aye.jpg"
     },
     {
       "name": "地瓜",
       "info": "神奇的大佬",
       "link": "http://digua.me",
-      "img_url": "../../static/digua.jpg"
+      "img_url": "./static/digua.jpg"
     },
     {
       "name": "兔哥",
